@@ -1,0 +1,142 @@
+Here's the complete `index.html`. Paste all of it into the GitHub editor and commit.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Off-Grid Ledger Master Ledger | Gary Bolduc</title>
+  <meta name="description" content="A free blank ledger for tracking what your homestead really costs and earns, year by year. From The Off-Grid Ledger series by Gary Bolduc.">
+  <!-- PLACEHOLDER: swap for the live address once Pages is on, e.g. https://gbolduc1.github.io/freebie/ -->
+  <link rel="canonical" href="https://garybolduc.github.io/freebie/">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f6f3ec;
+      color: #2b2b26;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 20px 32px;
+    }
+    .series {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #5a6b4e;
+      margin: 0 0 8px;
+    }
+    h1 {
+      font-size: 2rem;
+      line-height: 1.25;
+      margin: 0 0 20px;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #ddd6c8;
+      border-radius: 8px;
+      padding: 24px;
+      margin: 28px 0;
+    }
+    ul { padding-left: 20px; margin: 12px 0; }
+    li { margin-bottom: 6px; }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      font-weight: bold;
+    }
+    input[type="email"], input[type="text"] {
+      font-size: 1rem;
+      padding: 12px;
+      border: 1px solid #b9b2a3;
+      border-radius: 6px;
+    }
+    button {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      background: #4f6340;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    button:hover { background: #3e4f33; }
+    .fine {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.85rem;
+      color: #6b675d;
+    }
+    footer {
+      border-top: 1px solid #ddd6c8;
+      margin-top: 40px;
+      padding-top: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.85rem;
+      color: #6b675d;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="series">The Off-Grid Ledger series</p>
+    <h1>The Free Off-Grid Ledger Master Ledger</h1>
+
+    <p>Off-grid living is mostly a numbers game. The homesteads that last are the ones where somebody wrote everything down: what the land cost, what the water system really ran, what the chickens ate, and what came back in.</p>
+
+    <p>This is a blank ledger you fill in yourself. It starts with the Year One topics from the first book, and a new section gets added each time another book in the series comes out. It's one ledger that grows with your homestead, so you never have to start over.</p>
+
+    <div class="card">
+      <strong>What's inside</strong>
+      <ul>
+        <li>Year One pages for startup costs, land, water, power, and shelter</li>
+        <li>Monthly entry pages for money in and money out</li>
+        <li>A year-end page to see what the homestead actually cost and earned</li>
+        <li>New year sections added as each book releases, at this same link</li>
+      </ul>
+      <p class="fine">Print it, keep it on the kitchen shelf, and write in it. A paper ledger doesn't need a charge.</p>
+    </div>
+
+    <div class="card">
+      <!--
+        REPLACE BEFORE GOING LIVE: set action="..." to the form URL from
+        Mailchimp (Audience > Signup forms > Embedded forms) or
+        Buttondown (Settings > Embedding). Keep name="email" unless
+        your provider's embed code uses a different field name.
+      -->
+      <form action="#REPLACE-WITH-YOUR-SIGNUP-FORM-URL" method="post">
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="FNAME" autocomplete="given-name">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        <button type="submit">Send Me the Master Ledger</button>
+      </form>
+      <p class="fine">You'll get the ledger plus a short note when a new year's section is added. No spam, and you can unsubscribe anytime.</p>
+    </div>
+
+    <footer>
+      <p>The Off-Grid Ledger series by Gary Bolduc. Practical, financial, and legal realities of off-grid homesteading.</p>
+      <p>Copyright 2026 Gary Bolduc. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
+```
+
+A few notes:
+- **Your live address:** a repository named `freebie` under the `gbolduc1` account publishes at `gbolduc1.github.io/freebie`. That's the link the real QR code and the in-book pages will need. To turn it on, open the repository's Settings, then Pages, and choose to deploy from the `main` branch. The repository has to be public on a free account.
+- **The signup form:** it won't collect emails until you replace `#REPLACE-WITH-YOUR-SIGNUP-FORM-URL` with the form link from your Mailchimp or Buttondown account. The comment right above the form shows where to find that link.
+- **"What's inside":** I filled that list in from the series topics. Edit it to match the actual ledger once you've built it.
+- **Symbols:** the page has no currency or percent symbols, including in the styling code.
